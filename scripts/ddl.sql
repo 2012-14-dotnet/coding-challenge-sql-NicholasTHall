@@ -23,7 +23,8 @@ CREATE TABLE Employee.Employee
     SSN int not null,
     DeptID int not null UNIQUE,
     PRIMARY KEY (ID),
-    FOREIGN KEY (ID) REFERENCES Employee.EmpDetails(EmployeeID)
+    FOREIGN KEY (ID) REFERENCES Employee.EmpDetails(EmployeeID),
+    FOREIGN KEY (DeptID) REFERENCES Employee.Department(ID)
 );
 go
 
@@ -32,7 +33,6 @@ CREATE TABLE Employee.Department
     ID int not null,
     [Name] VARCHAR(100) not null,
     [Location] VARCHAR(100) not null,
-    PRIMARY KEY (ID),
-    FOREIGN KEY (ID) REFERENCES Employee.Employee(DeptID)
+    PRIMARY KEY (ID)
 );
 go

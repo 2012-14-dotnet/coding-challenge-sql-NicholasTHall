@@ -12,7 +12,7 @@ VALUES
 
 INSERT into Employee.Department (ID, [Name], [Location])
 VALUES
-(100, 'Joe Tester', 'IT'),
-(200, 'Bob Tester', 'Sales'),
-(300, 'Joe Worker', 'Marketing');
+(100, 'IT', 'IT building'),
+(200, 'Sales', 'Sales building'),
+(300, 'PR', 'PR building');
 go
