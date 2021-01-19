@@ -16,4 +16,9 @@ VALUES
 (001, 'Joe', 'Tester', 101223333, 100),
 (002, 'Bob', 'Tester', 111223333, 200),
 (003, 'Joe', 'Worker', 222113333, 300);
+GO
 
+INSERT into Employee.Department (ID, [Name], [Location])
+VALUES
+(400, 'Marketing', 'Marketing building');
+go
